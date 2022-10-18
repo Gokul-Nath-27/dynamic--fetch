@@ -1,0 +1,89 @@
+.event-page{
+    position: relative;
+    width: 100%;
+}
+.event-container {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+.event-page .event-info{
+    position: absolute !important;
+    background-color: rgba(195, 195, 110, 0.995) !important;
+    width: 80%;
+    top: 16rem;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    height: 300px;
+    color: white;
+    border-radius: .5rem;
+    z-index: 1;
+    animation: animate 1s;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+@keyframes animate {
+    from {
+        /* transform: scale(0); */
+        opacity: 0;
+    }
+    
+      to {
+        /* transform: scale(1); */
+        opacity: 1;
+      }
+}
+.event-container .top {
+    margin-top: 5rem;
+}
+
+.event-container .top .title {
+    font-weight: 600;
+}
+
+.wrapper {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .event-container {
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .wrapper {
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+
+    .event-container .top {
+        margin-top: 2rem;
+    }
+}
+
+.event-container .title {
+    font-size: 2rem;
+}
+@media only screen and (max-width: 400px){
+    .event-container .top {
+        margin-top: 1rem;
+    }
+}
+
+.catagory {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgb(203, 203, 203, .8);
+
+}

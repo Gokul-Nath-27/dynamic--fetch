@@ -1,0 +1,29 @@
+.onlyshow {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .onlyshow {
+    display: block;
+  }
+
+  .navbar {
+    top: -80px;
+    /* top: -30px; */
+  }
+}
+
+/* .navbar {
+  position: "sticky";
+  top: 0px;
+  color: rgb(255, 255, 255);
+  background-color: #000;
+  padding-bottom: 1rem;
+  border-radius: 0 0 10px 10px;
+  z-index: 1000000;
+} */
+
+a:active {
+  background-color: #000;
+  color: white;
+}

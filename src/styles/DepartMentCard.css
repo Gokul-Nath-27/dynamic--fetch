@@ -1,0 +1,73 @@
+/* departments card */
+
+.containerdept {
+  margin-bottom: 1rem;
+  overflow: hidden;
+  color: #000;
+}
+
+.containerdept .card .imgBx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+  will-change: transform;
+}
+
+.containerdept .card:hover .imgBx {
+  /* top: 0%; */
+  transform: translateY(-90%);
+}
+
+.containerdept .card .imgBx img {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 270px;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.containerdept .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0, 20%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.containerdept .card:hover .contentBx {
+  height: 175px;
+}
+
+.containerdept .card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(13px);
+  transition-delay: 0.5s;
+}
+
+.DeptHead {
+  font-size: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: poppins, sans-serif;
+
+  @media (max-width: 600px) {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .DeptHead {
+    font-size: 10vw;
+  }
+}

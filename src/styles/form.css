@@ -1,0 +1,67 @@
+/* * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+.headcontainer {
+    /* padding-top: 200px; */
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    height: 100vh;
+    /* box-shadow: white; */
+
+
+}
+
+.formcontainer {
+    height: 80vh;
+    overflow-y: scroll;
+    box-shadow: none !important;
+}
+
+.headcontainer .container {
+    /* overflow: auto; */
+    height: 70vh;
+
+    overflow-y: scroll;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    margin: 3vw;
+}
+
+.Name,
+.yearno {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.register {
+    width: 100px;
+    height: 40px;
+}
+
+.main-form {
+    display: flex;
+}
+
+.formsheet {
+    flex-basis: 80%;
+}
+
+.loginimage {
+    width: 40%;
+}
+
+@media screen and (max-width:600px) {
+    .loginimage {
+        display: none;
+    }
+}

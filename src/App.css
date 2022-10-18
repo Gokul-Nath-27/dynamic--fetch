@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "poppins", sans-serif;
+}
+
+
+.img {
+  background-image: url('../src/assets/earth.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  position: absolute;
+  top: 60%;
+  z-index: -1;
+  min-width: 100%;
+
+  will-change: transform;
+  min-height: 100vh;
+  transform: translateZ(0);
+
+
+}
+
+@media screen and(max-width:600px) {}
+
+section {
+  height: 200vh;
+}
+
+/* partical */
+
+.particles {
+  position: absolute;
+  z-index: -10000;
+}
+
+/* progress */
+
+.scrollprogress {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  height: 4px;
+  /* background: #203f98; */
+  background: white;
+  transform-origin: 0%;
+  z-index: 10000000;
+  border-radius: 50px;
+}
+
+/* register now btn */
+.span_btn {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.span_btn::after {
+  content: "\00bb";
+  position: absolute;
+  color: black;
+  opacity: 0;
+
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 40px;
+}
+
+.button:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+
+.countdown {
+  width: 45%;
+  font-family: unset;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
+}
